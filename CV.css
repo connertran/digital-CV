@@ -1,0 +1,265 @@
+/* I used border-box in all elements to fulfill the requirement*/
+/* there is no need to change the color of the text */
+/* black is a great contrast color against my background color */
+body {
+  font-family: Lilita One;
+  background-color: lightblue;
+  border: solid 4px black;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-image: url("star-sky.jpg");
+}
+
+main {
+  padding-top: 6rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(103, 103, 245);
+  /* I want both email link and linkedin link to have the same color */
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: underline;
+  /* adding some hovering effect might make your CV be better */
+}
+
+
+h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-left: 40px;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+
+th {
+  text-decoration: underline;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: Fascinate Inline;
+  text-align: center;
+  text-shadow: 7px 7px 15px rgba(255, 255, 255, 0.5);
+  /* using text shadow to emphasize the important of my heading 1 (my name) */
+  text-decoration: underline overline;
+  margin-top: 0;
+  box-sizing: border-box;
+  /* I can do this because I already set the header as a flex box */
+  align-self: center;
+  justify-self: center;
+
+}
+
+#portfolio-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  border: thick double black;
+  margin-left: 5vw;
+  margin-top: 3.5vh;
+}
+
+h2+blockquote {
+  border-style: none none double none;
+  border-width: 2px;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.submit-button {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  padding: 5px 20px;
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  border-style: none;
+  border-radius: 20px;
+  background-color: white;
+  color: darkblue;
+  font-weight: 700;
+  transition: color 0.25s, background-color 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: darkblue;
+}
+
+.rating-range {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 2em;
+  padding-top: 4px;
+  box-sizing: border-box;
+}
+
+input {
+  border: 0;
+}
+
+/* Remove outlines from form elements, ensuring a cleaner look. */
+.introduction-section {
+  display: flex;
+  height: 500px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-info {
+  line-height: 1em;
+  justify-self: flex-end;
+  align-self: flex-end;
+  padding-right: 1rem;
+  font-size: 16px;
+  position: relative;
+  top: 3.5rem;
+}
+
+.individual-contact-info {
+  font-weight: 900;
+
+}
+
+.year-school {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.all-certificates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.IGCSE-grades {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+footer{
+  background-color: rgb(25, 5, 122);
+  padding-bottom: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  color: white;
+  border-radius: 20px;
+  border: solid 4px white;
+}
+
+/* normal computer display view */
+main,
+footer {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+/* for tablets like ipad Air */
+@media (max-width: 1200px) {
+  main {
+    width: 80%;
+  }
+
+  .introduction-section {
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact-form-heading {
+    margin-left: 0;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  footer{
+    background-color: rgb(25, 5, 122);
+    padding-bottom: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    color: white;
+    border-radius: 20px;
+    border: solid 4px white;
+  }
+}
+
+
+/* for mobile phone view like iPhoneXR */
+@media (max-width: 900px) {
+  main {
+    width: 90%;
+  }
+
+  .introduction-section {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    line-height: 1em;
+    padding-right: 1rem;
+    font-size: 16px;
+    position: relative;
+    top: 0rem;
+    left: 1rem;
+  }
+
+
+  #portfolio-photo {
+    width: 170px;
+    height: 170px;
+    border-radius: 150px;
+    border: thick double black;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .all-certificates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer{
+    background-color: rgb(25, 5, 122);
+    padding-left: 2px;
+    padding-right: 0;
+    margin-left: 0;
+    border: solid 2px white;
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+  }
+}

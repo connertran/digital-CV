@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CV</title>
+    <link rel="stylesheet" href="CV.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section>
+        <div class="introduction-section">
+          <img
+            src="portfolio-photo.JPG"
+            alt="portfolio-photo"
+            id="portfolio-photo"
+            width="150"
+          />
+          <h1>Duc Anh Tran</h1>
+          <div class="contact-info">
+            <p class="individual-contact-info">Address&colon;</p>
+            <p class="my-address">
+              Kramperova 1007&sol;3 Prague 4 Kamyk, Czech Republic
+            </p>
+            <!--remember to change this later, I am moving to a new house soon -->
+            <p class="individual-contact-info">Phone&colon;</p>
+            <p>&plus;420 777 814 215</p>
+            <p class="individual-contact-info">Email&colon;</p>
+            <a href="mailto:conner.tran@bsa.edu.vn"
+              >conner.tran&#64;bsa.edu.vn</a
+            >
+            <p class="individual-contact-info">LinkedIn&colon;</p>
+            <a href="https://www.linkedin.com/in/conner-tran-583249243/"
+              >linkedin.com/in/conner-tran</a
+            >
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <h2>Professional Summary</h2>
+        <blockquote>
+          Driven by the ambition to excel as a software engineer, I am actively
+          honing my skills through the Springboard Software Engineer track. My
+          drive for innovation keeps me going strong. I'm big on working hard,
+          managing my time well, and being a team player. I love bringing a
+          collaborative spirit to the table that really amps up our team's game.
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>education</h2>
+        <blockquote>
+          <div class="year-school">
+            <table>
+              <!-- here I'd like to use table rather than odered list-->
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>School</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2010-2015</td>
+                  <td>
+                    Blue Sky Academy &#40;Bilingual School in Vietnam&#41;
+                  </td>
+                </tr>
+                <tr>
+                  <td>2015-2023</td>
+                  <td>
+                    Sunny Canadian International School &#40;Bilingual School in
+                    Vietnam&#41;
+                  </td>
+                </tr>
+                <tr>
+                  <td>2023-2024</td>
+                  <td>
+                    Springboard: Software Engineering Career Track - Foundations
+                    to Core.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>languages</h2>
+        <!--table is a nice way to showcase your skills(languages)-->
+        <blockquote>
+          <table>
+            <thead>
+              <tr>
+                <th>Language</th>
+                <th>Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vietnamese</td>
+                <td>Native</td>
+              </tr>
+              <tr>
+                <td>English</td>
+                <td>C1</td>
+              </tr>
+              <tr>
+                <td>Czech</td>
+                <td>C1</td>
+              </tr>
+              <tr>
+                <td>German</td>
+                <td>A2</td>
+              </tr>
+            </tbody>
+          </table>
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>certificates</h2>
+        <blockquote>
+          <div class="all-certificates">
+            <div class="IGCSE-grades">
+              <h3>IGCSE</h3>
+              <ol>
+                <li>Mathematics &#40;A&plus;&#41;</li>
+                <li>Science &#40;A&#41;</li>
+                <li>German &#40;A&#41;, English &#40;A&#41;</li>
+              </ol>
+              <!-- this shows I'm good at maths and science-->
+            </div>
+            <h3>DofE &#40;The Duke of Edinburgh&#41;</h3>
+            <!-- this shows I'm good communicating and team work -->
+            <h3>Cambridge English: Advanced &#40;CAE&#41;</h3>
+            <h3>Czech Maturita</h3>
+            <!-- I already graduated from high school -->
+          </div>
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>technologies</h2>
+
+        <blockquote>
+          <h3>Languages</h3>
+          <ul>
+            <li>Python- Fundamental knowledge</li>
+            <li>HTML- Fundamental knowledge</li>
+          </ul>
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>hobby</h2>
+        <blockquote>
+          <ul>
+            <li>
+              Playing chess- great way to destress, and keep the mind sharp.
+            </li>
+            <li>
+              Work out- I aspire to become proficient in programming while also
+              maintaining a focus on my health and wellness.
+            </li>
+          </ul>
+        </blockquote>
+      </section>
+    </main>
+    <footer>
+      <!--contact section is always at the of the CV so it should go to the footer section-->
+      <section>
+        <!--contact form-->
+        <h2 class="contact-form-heading">contact form</h2>
+        <div class="contact-form-section">
+          <form action="#">
+            <label>
+              Name:
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                required
+              /><br />
+            </label>
+            <br />
+            <label>
+              Email:
+              <input
+                type="email"
+                placeholder="Enter you email"
+                name="user-email"
+                required
+              /><br />
+            </label>
+            <br />
+            <label for="or">Organization:</label>
+            <!--for & id method practice-->
+            <input
+              type="text"
+              placeholder="Organization"
+              name="organization"
+              id="or"
+              required
+            /><br />
+            <br />
+            <label>
+              Role:
+              <input
+                type="text"
+                placeholder="Role"
+                name="role"
+                required
+              /><br />
+            </label>
+
+            <h3>Reason for Contact</h3>
+            <label
+              ><input type="radio" name="reason-contact" value="job-offer" />
+              Job Offer <br
+            /></label>
+            <label
+              ><input type="radio" name="reason-contact" value="Interview" />
+              Need for Interview <br
+            /></label>
+            <label
+              ><input
+                type="radio"
+                name="reason-contact"
+                value="collaboration" />
+              Collaborations <br
+            /></label>
+
+            <!-- range bar -->
+            <div class="rating-range">
+              <label for="rating">On a scale of 1-10 rate my CV</label>
+              <input
+                type="range"
+                id="rating"
+                name="rate"
+                min="1"
+                max="10"
+              /><br />
+            </div>
+
+            Message:<textarea
+              name="message"
+              placeholder="Message you want to send me"
+              rows="10"
+              cols="40"
+            ></textarea>
+            <br />
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
